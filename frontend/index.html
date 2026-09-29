@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rawaaj - خدمات محتوى ذكي للشركات الصغيرة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Floating Lights -->
+  <div class="floating-lights" id="floatingLights">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo" id="homeLogo">RAW<span>AAJ</span></a>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-item active">الرئيسية</a>
+      <a href="#about" class="nav-item">من نحن</a>
+      <a href="#services" class="nav-item">خدماتنا</a>
+      <a href="#packages" class="nav-item">باقاتنا</a>
+      <a href="#how" class="nav-item">كيف نعمل</a>
+    </nav>
+    <a href="#" class="login-btn" id="openLogin"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a>
+    <a href="#" class="account-btn" id="accountBtn" style="display:none;"><i class="fas fa-user"></i> حسابي</a>
+  </header>
+
+  <!-- Account Sidebar -->
+  <div class="account-sidebar" id="accountSidebar">
+    <button class="close-sidebar" id="closeSidebar">&times;</button>
+    <div class="account-sidebar-header">
+      <div class="account-sidebar-avatar" id="sidebarAvatar">م</div>
+      <div class="account-sidebar-info">
+        <h3 id="sidebarName">المستخدم</h3>
+        <p id="sidebarEmail">email@example.com</p>
+      </div>
+    </div>
+    <ul class="account-menu">
+      <li><a href="#" class="sidebar-link" data-page="dashboard"><i class="fas fa-home"></i> لوحة التحكم</a></li>
+      <li><a href="#" class="sidebar-link" data-page="orders"><i class="fas fa-shopping-cart"></i> طلباتي</a></li>
+      <li><a href="#" class="sidebar-link" data-page="projects"><i class="fas fa-briefcase"></i> مشاريعي</a></li>
+      <li><a href="#" class="sidebar-link" data-page="settings"><i class="fas fa-cog"></i> الإعدادات</a></li>
+      <li><a href="#" class="sidebar-link logout" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main id="mainContent">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <h1 class="company-name">Rawaaj</h1>
+      <p class="hero-tagline">
+        <span class="highlight">متجر رقمي متكامل</span> ينتج محتوى تفاعلي (نصوص وتصاميم) باستخدام الذكاء الاصطناعي خصيصاً
+        <span class="highlight">لأصحاب المشاريع الصغيرة والمتوسطة</span>
+      </p>
+      <div class="target-audience">
+        <div class="audience-item">مطاعم</div>
+        <div class="audience-item">صالونات</div>
+        <div class="audience-item">متاجر إلكترونية</div>
+        <div class="audience-item">شركات ناشئة</div>
+        <div class="audience-item">محلات تجارية</div>
+      </div>
+      <a href="#packages" class="login-btn" style="font-size:1.1rem; padding:14px 32px;">
+        <i class="fas fa-shopping-cart"></i> استعرض باقاتنا
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section-title">من نحن</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>مرحباً بكم في <strong style="color:#ff0000;">Rawaaj</strong>، متجرك الرقمي المتكامل لخدمات المحتوى الذكي.</p>
+          <p>نحن نقدم حلولاً متكاملة لأصحاب المشاريع الصغيرة والمتوسطة الذين يحتاجون إلى محتوى احترافي يساعدهم على النمو والانتشار. نستخدم أحدث تقنيات الذكاء الاصطناعي لإنشاء مقالات مميزة وتصاميم جذابة لوسائل التواصل الاجتماعي.</p>
+          <p>هدفنا إنك تركز على شغلك، وإحنا نهتم بالمحتوى اللي هيخلي مشروعك يوصل لأكبر عدد من العملاء.</p>
+        </div>
+        <div class="ai-features">
+          <div class="ai-feature">
+            <i class="fas fa-edit"></i>
+            <h3>كتابة مقالات ذكية</h3>
+            <p>مقالات مدروسة ومنسقة باستخدام الذكاء الاصطناعي لتعكس هوية مشروعك</p>
+          </div>
+          <div class="ai-feature">
+            <i class="fas fa-paint-brush"></i>
+            <h3>تصاميم سوشيال ميديا</h3>
+            <p>تصاميم احترافية وجذابة لجميع منصات التواصل الاجتماعي</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <h2 class="section-title">خدماتنا الفردية</h2>
+      <p class="section-subtitle">يمكنك طلب أي من هذه الخدمات بشكل منفرد حسب احتياجات مشروعك</p>
+      <div class="cards-grid" id="servicesContainer">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section" id="packages">
+      <h2 class="section-title">باقاتنا الشهرية</h2>
+      <p class="section-subtitle">باقات متكاملة تشمل مجموعة من الخدمات بشكل دوري شهري</p>
+      <div class="cards-grid" id="packagesContainer">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <h2 class="section-title">كيف نعمل</h2>
+      <div class="how-it-works">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>التسجيل واختيار الباقة</h3>
+          <p>قم بالتسجيل في الموقع واختر الباقة أو الخدمة المناسبة لمشروعك.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>تعبئة نموذج المشروع</h3>
+          <p>نرسل لك نموذجاً مفصلاً لتفاصيل مشروعك وهويتك البصرية.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>إنتاج المحتوى بالذكاء الاصطناعي</h3>
+          <p>فريقنا يستخدم أحدث أدوات الذكاء الاصطناعي لإنشاء محتوى مخصص.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>مراجعة وتعديل</h3>
+          <p>نرسل لك المحتوى للمراجعة، ونجري أي تعديلات تطلبها.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <h3>تسليم المحتوى النهائي</h3>
+          <p>نسلم لك المحتوى النهائي بصيغ مناسبة وجاهزة للنشر.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-logo">RAW<span>AAJ</span></div>
+      <p class="footer-text">متجر رقمي متكامل ينتج محتوى تفاعلي باستخدام الذكاء الاصطناعي لأصحاب المشاريع الصغيرة والمتوسطة.</p>
+      <p class="copyright">© 2025 Rawaaj. جميع الحقوق محفوظة</p>
+    </footer>
+  </main>
+
+  <!-- ========== Account Pages ========== -->
+  <div class="account-page" id="dashboardPage">
+    <div class="page-header">
+      <h1>لوحة التحكم</h1>
+    </div>
+    <div class="stats-grid" id="dashboardStats"></div>
+    <h3 style="margin-bottom:15px;">آخر الطلبات</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>الخدمة / الباقة</th>
+            <th>السعر</th>
+            <th>الحالة</th>
+            <th>التاريخ</th>
+          </tr>
+        </thead>
+        <tbody id="recentOrdersTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="account-page" id="ordersPage">
+    <div class="page-header">
+      <h1>طلباتي</h1>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>النوع</th>
+            <th>الاسم</th>
+            <th>السعر</th>
+            <th>الحالة</th>
+            <th>التاريخ</th>
+          </tr>
+        </thead>
+        <tbody id="ordersTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="account-page" id="projectsPage">
+    <div class="page-header">
+      <h1>مشاريعي</h1>
+    </div>
+    <div id="projectsContainer"></div>
+  </div>
+
+  <div class="account-page" id="settingsPage">
+    <div class="page-header">
+      <h1>الإعدادات</h1>
+    </div>
+    <div style="max-width:500px;">
+      <h3 style="margin-bottom:20px;">تعديل البيانات الشخصية</h3>
+      <form id="profileForm">
+        <div class="form-group">
+          <label>الاسم</label>
+          <input type="text" id="settingsName" required>
+        </div>
+        <div class="form-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" id="settingsEmail" disabled style="opacity:0.6;">
+        </div>
+        <div class="form-group">
+          <label>رقم الهاتف</label>
+          <input type="text" id="settingsPhone">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:auto; padding:12px 30px;">حفظ التغييرات</button>
+      </form>
+
+      <h3 style="margin:40px 0 20px;">تغيير كلمة المرور</h3>
+      <form id="passwordForm">
+        <div class="form-group">
+          <label>كلمة المرور الحالية</label>
+          <input type="password" id="currentPassword" required>
+        </div>
+        <div class="form-group">
+          <label>كلمة المرور الجديدة</label>
+          <input type="password" id="newPassword" required minlength="6">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:auto; padding:12px 30px;">تغيير كلمة المرور</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ========== Admin Layout (منفصل تماماً) ========== -->
+  <div id="adminLayout" style="display:none;">
+    <div class="admin-shell">
+      <!-- Admin Sidebar -->
+      <aside class="admin-sidebar">
+        <div class="admin-brand">
+          <span class="logo">RAW<span>AAJ</span></span>
+          <small>لوحة الإدارة</small>
+        </div>
+        <nav class="admin-nav">
+          <a href="#" class="admin-nav-link active" data-admin-tab="dashboard">
+            <i class="fas fa-chart-line"></i> الإحصائيات
+          </a>
+          <a href="#" class="admin-nav-link" data-admin-tab="orders">
+            <i class="fas fa-shopping-cart"></i> الطلبات
+          </a>
+          <a href="#" class="admin-nav-link" data-admin-tab="users">
+            <i class="fas fa-users"></i> العملاء
+          </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+          <div class="admin-user-info">
+            <div class="account-sidebar-avatar" id="adminAvatar">م</div>
+            <div>
+              <strong id="adminName">المدير</strong>
+              <p id="adminEmail" style="font-size:0.8rem;color:#aaa;margin:0;">admin@rawaaj.com</p>
+            </div>
+          </div>
+          <button class="btn btn-outline" id="adminLogoutBtn" style="width:100%;margin-top:15px;">
+            <i class="fas fa-sign-out-alt"></i> تسجيل الخروج
+          </button>
+        </div>
+      </aside>
+
+      <!-- Admin Main -->
+      <div class="admin-main">
+        <header class="admin-topbar">
+          <h2 id="adminPageTitle">الإحصائيات</h2>
+          <span class="admin-badge"><i class="fas fa-shield-alt"></i> وضع الإدارة</span>
+        </header>
+
+        <div class="admin-body">
+          <!-- Dashboard Tab -->
+          <div class="admin-tab active" id="adminTabDashboard">
+            <div class="stats-grid" id="adminStats"></div>
+            <h3 style="margin:30px 0 15px;">آخر الطلبات</h3>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>العميل</th>
+                    <th>الخدمة</th>
+                    <th>السعر</th>
+                    <th>الحالة</th>
+                    <th>التاريخ</th>
+                  </tr>
+                </thead>
+                <tbody id="adminRecentOrders"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Orders Tab -->
+          <div class="admin-tab" id="adminTabOrders">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>العميل</th>
+                    <th>الإيميل</th>
+                    <th>الهاتف</th>
+                    <th>الخدمة / الباقة</th>
+                    <th>السعر</th>
+                    <th>الحالة</th>
+                    <th>التاريخ</th>
+                    <th>تغيير الحالة</th>
+                  </tr>
+                </thead>
+                <tbody id="adminOrdersTable"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Users Tab -->
+          <div class="admin-tab" id="adminTabUsers">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>الاسم</th>
+                    <th>الإيميل</th>
+                    <th>الهاتف</th>
+                    <th>تاريخ التسجيل</th>
+                  </tr>
+                </thead>
+                <tbody id="adminUsersTable"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Login Modal ========== -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal-close" data-close="loginModal">&times;</button>
+      <h2>تسجيل الدخول</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" id="loginEmail" required placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+          <label>كلمة المرور</label>
+          <input type="password" id="loginPassword" required placeholder="••••••">
+        </div>
+        <div class="form-error" id="loginError"></div>
+        <button type="submit" class="btn btn-primary">دخول</button>
+      </form>
+      <p class="form-switch">ليس لديك حساب؟ <a href="#" id="switchToSignup">إنشاء حساب</a></p>
+    </div>
+  </div>
+
+  <!-- ========== Signup Modal ========== -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" data-close="signupModal">&times;</button>
+      <h2>إنشاء حساب جديد</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label>الاسم الكامل</label>
+          <input type="text" id="signupName" required placeholder="محمد أحمد">
+        </div>
+        <div class="form-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" id="signupEmail" required placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+          <label>رقم الهاتف (اختياري)</label>
+          <input type="text" id="signupPhone" placeholder="01xxxxxxxxx">
+        </div>
+        <div class="form-group">
+          <label>كلمة المرور</label>
+          <input type="password" id="signupPassword" required minlength="6" placeholder="6 أحرف على الأقل">
+        </div>
+        <div class="form-error" id="signupError"></div>
+        <button type="submit" class="btn btn-primary">إنشاء الحساب</button>
+      </form>
+      <p class="form-switch">لديك حساب بالفعل؟ <a href="#" id="switchToLogin">تسجيل الدخول</a></p>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage"></span>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
